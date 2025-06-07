@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.container img {
+    max-width: 250px;
+    height: auto; /* mantiene le proporzioni */
+    object-fit: cover; /* adatta l'immagine al contenitore  !!!! (opzionale) */
+}
+
+.card   {
+    display: flex;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* aggiungi un'ombra leggera: spostamento orizzontale, spostamento verticale, spostamento verticale, colore nero, trasparente al 90%  */
+}
+
+.description {
+    flex: 1; /* occupa tutto lo spazio disponibile */
+    padding: 1rem;
+}
+
+
+.card-footer {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap; /*Se gli elementi non ci stanno più su una riga, vai pure a capo. Falli andare su più righe. 
+                        di defaulti è NO-WRAP*/
+}
+
+.card-footer-item {
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px; /* più piccolo */
+    font-size: 0.85rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    white-space: nowrap; /* impedisce il ritorno a capo */
+}
+
+
+.card-footer-item:hover {
+    background-color: #e0e0e0;
+    cursor: default;
+}
+
+
+.ohana {
+    margin-top: 1rem;
+    color: #4a90e2; /* azzurro stitch */
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.subtitle {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #5c2d91; /* viola intenso */
+    margin-bottom: 0.4rem;
+}
